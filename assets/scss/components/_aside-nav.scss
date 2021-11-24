@@ -5,10 +5,13 @@
     @include desktop{
         display: none;
     }
-    @include desktop-xl{
-        left: toRem(2);
+    @include desktop-lg{
+        left: toRem(40);
     }
-    @include min-desktop-xl{
+    @include desktop-lg-to-desktop-2k{
+        left: toRem(3);
+    }
+    @include min-desktop-2k{
         left: toRem(40);
     }
 }

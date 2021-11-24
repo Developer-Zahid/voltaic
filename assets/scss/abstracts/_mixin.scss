@@ -78,9 +78,30 @@
     }
 }
 
+//min-2K
+@mixin desktop-2k {
+    @media (min-width: 1900px) {
+        @content;
+    }
+}
+
+//min-2K
+@mixin min-desktop-2k {
+    @media (min-width: 1901px) {
+        @content;
+    }
+}
+
 //sm-lg
 @mixin tablet-to-desktop-xl {
     @media (min-width: 768px) and (max-width: 1400px) {
+        @content;
+    }
+}
+
+//sm-lg
+@mixin desktop-lg-to-desktop-2k {
+    @media (min-width: 1200px) and (max-width: 1900px) {
         @content;
     }
 }

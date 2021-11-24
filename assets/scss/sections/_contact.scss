@@ -1,5 +1,14 @@
 /* Contact Section Style */
 .contact{
+    &::before{
+        content: url(../images/contact/contact-bg.png);
+        position: absolute;
+        right: 0;
+        width: auto;
+        @include tablet{
+            display: none;
+        }
+    }
     &__form .form-control{
         color: $color-black;
         font-size: toRem(18);

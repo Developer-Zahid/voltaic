@@ -495,13 +495,19 @@ img {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1199px) {
   .aside-navbar {
-    left: 0.125rem;
+    left: 2.5rem;
   }
 }
 
-@media (min-width: 1401px) {
+@media (min-width: 1200px) and (max-width: 1900px) {
+  .aside-navbar {
+    left: 0.1875rem;
+  }
+}
+
+@media (min-width: 1901px) {
   .aside-navbar {
     left: 2.5rem;
   }
@@ -1067,6 +1073,19 @@ img {
 }
 
 /* Contact Section Style */
+.contact::before {
+  content: url(../images/contact/contact-bg.png);
+  position: absolute;
+  right: 0;
+  width: auto;
+}
+
+@media (max-width: 767px) {
+  .contact::before {
+    display: none;
+  }
+}
+
 .contact__form .form-control {
   color: #202120;
   font-size: 1.125rem;
