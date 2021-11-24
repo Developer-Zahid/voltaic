@@ -1,0 +1,22 @@
+/* Order and Installment Process Section Style */
+.process{
+    &__card{
+        &--arrow{
+            &::before{
+                content: url(../images/process/arrow.svg);
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(50%, -100%);
+                @include desktop{
+                    display: none;
+                }
+            }
+        }
+        &__title{
+            font-size: toRem(24);
+            font-weight: 700;
+            margin-top: toRem(24);
+        }
+    }
+}

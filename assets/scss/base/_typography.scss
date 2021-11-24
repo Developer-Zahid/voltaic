@@ -1,0 +1,82 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Custom Fonts Link */
+@font-face {
+    font-family: gotham;
+    src: url('../fonts/gotham-fonts/Gotham-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham';
+    src: url('../fonts/gotham-fonts/Gotham-Ultra.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: gotham;
+    src: url('../fonts/gotham-fonts/Gotham-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham';
+    src: url('../fonts/gotham-fonts/Gotham-Medium.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham';
+    src: url('../fonts/gotham-fonts/Gotham-Book.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham';
+    src: url('../fonts/gotham-fonts/Gotham-Thin.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@import url(../fonts/voltaic-icons/style.css);
+
+/* Typography Reset */
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6{
+    font-family: $font-primary;
+}
+h1,.h1{
+    font-size: toRem(36);
+}
+h2,.h2{
+    font-size: toRem(30);
+    line-height: 140%;
+}
+h3,.h3{
+    font-size: toRem(24);
+    line-height: 190%;
+}
+h4,.h4{
+    font-size: toRem(18);
+}
+h5,.h5{
+    font-size: toRem(12);
+    line-height: 190%;
+}
+h6,.h6{
+    font-size: toRem(14);
+}
+p{
+    line-height: 190%;
+    @include min-desktop{
+        font-size: toRem(18);
+    }
+    @include min-desktop{
+        font-size: toRem(25);
+    }
+}

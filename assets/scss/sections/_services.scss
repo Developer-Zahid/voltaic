@@ -1,0 +1,43 @@
+/* Services Section Style */
+.services{
+    .fix-space{
+        @include min-desktop-xl{
+            margin-top: 20vh;
+        }
+    }
+    &__list{
+        @include min-tablet{
+            margin-top: toRem(82);
+        }
+        &__items{
+            font-size: toRem(18);
+            font-weight: 600;
+            @include min-tablet{
+                font-size: toRem(25);
+            }
+            &:not(:last-child){
+                margin-bottom: toRem(15);
+                @include min-tablet{
+                    margin-bottom: toRem(38);
+                }
+            }
+        }
+    }
+    &__block{
+        &:not(:last-child){
+            margin-bottom: toRem(80);
+        }
+        &__sub-title{
+            font-size: toRem(25);
+            font-weight: 600;
+        }
+        &__text{
+            font-size: toRem(18);
+        }
+    }
+    &__image{
+        @include desktop-lg{
+            max-width: toRem(500);
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'voltaic';
+  src:  url('fonts/voltaic.eot?je9g65');
+  src:  url('fonts/voltaic.eot?je9g65#iefix') format('embedded-opentype'),
+    url('fonts/voltaic.ttf?je9g65') format('truetype'),
+    url('fonts/voltaic.woff?je9g65') format('woff'),
+    url('fonts/voltaic.svg?je9g65#voltaic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="voltaic-icon-"], [class*=" voltaic-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'voltaic' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.voltaic-icon-chevron-up:before {
+  content: "\e917";
+}
+.voltaic-icon-menu:before {
+  content: "\e916";
+}
+.voltaic-icon-chevron-right:before {
+  content: "\e902";
+}
+.voltaic-icon-chevron-left:before {
+  content: "\e905";
+}
+.voltaic-icon-close:before {
+  content: "\e914";
+}
+.voltaic-icon-envelope:before {
+  content: "\e907";
+}
+.voltaic-icon-instagram:before {
+  content: "\e901";
+}
+.voltaic-icon-google:before {
+  content: "\e903";
+}
+.voltaic-icon-linkedin:before {
+  content: "\e906";
+}
+.voltaic-icon-twitter:before {
+  content: "\e904";
+}
+.voltaic-icon-facebook:before {
+  content: "\e900";
+}

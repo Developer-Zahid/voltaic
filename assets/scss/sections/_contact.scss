@@ -1,0 +1,17 @@
+/* Contact Section Style */
+.contact{
+    &__form .form-control{
+        color: $color-black;
+        font-size: toRem(18);
+        height: toRem(61);
+        border-color: $color-black;
+        text-shadow: none;
+        @include min-tablet{
+            padding-left: toRem(31);
+        }
+        &::placeholder{
+            color: currentColor;
+            opacity: 1;
+        }
+    }
+}

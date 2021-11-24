@@ -1,0 +1,76 @@
+/* Common Button's Style */
+.primary-btn,
+.outline-btn{
+	font-size: toRem(18);
+	font-family: $font-primary;
+	font-weight: 600;
+	@include min-tablet{
+		font-size: toRem(24);
+	}
+}
+.primary-btn{
+	color: $color-white;
+	padding: toRem(16) toRem(64);
+	background: $color-primary;
+	border: 2px solid $color-primary;
+	box-shadow: 0px 4px 24px rgba(247, 162, 28, 0.46);
+	@include min-tablet{
+		padding: toRem(10) toRem(50);
+	}
+	@extend %transition;
+	&:hover, 
+	&:focus-visible{
+		color: $color-black;
+		background: $color-white;
+	}
+}
+
+.outline-btn{
+	color: $color-black;
+	border: toRem(2) solid $color-black;
+	padding: toRem(10) toRem(30);
+	@include min-tablet{
+		padding: toRem(10) toRem(75);
+		border-width: toRem(5);
+	}
+	@extend %transition;
+	&:hover,
+	&:focus-visible{
+		color: $color-white;
+		background-color: $color-black;
+	}
+}
+
+.link-btn{
+	color: $color-primary;
+	font-size: toRem(18);
+	font-weight: 700;
+	text-decoration: underline;
+	@extend %transition;
+	@include min-tablet{
+		font-size: toRem(25);
+	}
+	&:hover, 
+	&:focus-visible{
+		color: $color-black;
+		text-decoration: underline $color-primary;
+	}
+}
+
+.scroll-top{
+	bottom: 3%;
+	right: 1%;
+	display: none;
+	cursor: pointer;
+	z-index: 7;
+	@include mobile{
+		bottom: 2%;
+	}
+	&__btn{
+		width: 2.8rem;
+		height: 2.8rem;
+		font-size: 1.5rem;
+		color: $color-white;
+		background: $color-primary;
+	}
+}
